@@ -1,0 +1,212 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-24T18:41:27.594Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6803498500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Search date range",
+        "description": "",
+        "id": "find-transactions-in-account-activity;search-date-range",
+        "after": [
+          {
+            "result": {
+              "duration": 876786000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5516181200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user accesses the Find Transactions tab",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_accesses_the_Find_Transactions_tab()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 586778600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user enters date range from \"2012-09-01\" to \"2012-09-06\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2012-09-01\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"2012-09-06\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_enters_date_range_from_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5094193200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks search",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.clicks_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_transactions_dates_between_to(FindTransactionsDefs.java:51)\r\n\tat ✽.results table should only show transactions dates between \"2012-09-01\" to \"2012-09-06\"(file:///C:/Users/umitz/Desktop/Zerobank/src/test/resources/features/FindTransactions.feature:8)\r\n",
+              "status": "pending"
+            },
+            "line": 8,
+            "name": "results table should only show transactions dates between \"2012-09-01\" to \"2012-09-06\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2012-09-01\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"2012-09-06\"",
+                  "offset": 74
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_transactions_dates_between_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the results should be sorted by most recent date",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_results_should_be_sorted_by_most_recent_date()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the user enters date range from \"2012-09-02\" to \"2012-09-06\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2012-09-02\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"2012-09-06\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_enters_date_range_from_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "clicks search",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.clicks_search()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "results table should only show transactions dates between \"2012-09-02\" to \"2012-09-06\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2012-09-02\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"2012-09-06\"",
+                  "offset": 74
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_transactions_dates_between_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "the results table should only not contain transactions dated \"2012-09-01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2012-09-01\"",
+                  "offset": 61
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_results_table_should_only_not_contain_transactions_dated(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@find"
+          },
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Find Transactions in Account Activity",
+    "description": "",
+    "id": "find-transactions-in-account-activity",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/FindTransactions.feature",
+    "tags": [
+      {
+        "name": "@find",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

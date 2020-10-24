@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.zerobank.runners.CukesRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 18.602 s <<< FAILURE! - in com.zerobank.runners.CukesRunner
+Savings account redirect(Navigating to specific accounts in Accounts Activity)  Time elapsed: 17.415 s  <<< ERROR!
+java.lang.NullPointerException
+
