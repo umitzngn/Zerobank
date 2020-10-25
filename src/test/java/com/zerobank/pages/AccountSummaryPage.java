@@ -25,6 +25,9 @@ public class AccountSummaryPage extends BasePage {
     @FindBy(linkText = "Loan")
     public WebElement Loan;
 
+    @FindBy(xpath = "//li[@id='pay_bills_tab']/a")
+    public WebElement payBills;
+
 
 
 

@@ -1,13 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-10-25T22:00:44.290Z",
+        "start_timestamp": "2020-10-25T22:59:04.974Z",
         "before": [
           {
             "result": {
-              "duration": 7539958500,
+              "duration": 7463149500,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 4,
-        "name": "Search date range",
+        "name": "Add a new payee",
         "description": "",
-        "id": "find-transactions-in-account-activity;search-date-range",
+        "id": "add-new-payee-under-pay-bills;add-a-new-payee",
         "after": [
           {
             "result": {
-              "duration": 725522500,
+              "duration": 809899800,
               "status": "passed"
             },
             "match": {
@@ -35,659 +35,79 @@
         "steps": [
           {
             "result": {
-              "duration": 7774477300,
+              "duration": 9733754400,
               "status": "passed"
             },
             "line": 5,
-            "name": "the user accesses the Find Transactions tab",
+            "name": "Add New Payee tab",
             "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_accesses_the_Find_Transactions_tab()"
+              "location": "com.zerobank.stepdefinitions.AddNewPayeeDefs.add_New_Payee_tab()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 539005500,
+              "duration": 6690923500,
               "status": "passed"
             },
             "line": 6,
-            "name": "the user enters date range from \"2012-09-01\" to \"2012-09-06\"",
+            "name": "creates new payee using following information",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"2012-09-01\"",
-                  "offset": 32
-                },
-                {
-                  "val": "\"2012-09-06\"",
-                  "offset": 48
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_enters_date_range_from_to(java.lang.String,java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AddNewPayeeDefs.creates_new_payee_using_following_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
             },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 100435100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.clicks_search()"
-            },
+            "rows": [
+              {
+                "cells": [
+                  "Payee Name",
+                  "The Law Offices of Hyde, Price \u0026 Scharks"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee Address",
+                  "100 Same st, Anytown, USA, 10001"
+                ]
+              },
+              {
+                "cells": [
+                  "Account",
+                  "Checking"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee details",
+                  "XYZ account"
+                ]
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2092323600,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "results table should only show transactions dates between \"2012-09-01\" to \"2012-09-06\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2012-09-01\"",
-                  "offset": 58
-                },
-                {
-                  "val": "\"2012-09-06\"",
-                  "offset": 74
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_transactions_dates_between_to(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 114772500,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "the results should be sorted by most recent date",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_results_should_be_sorted_by_most_recent_date()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 342432200,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the user enters date range from \"2012-09-02\" to \"2012-09-06\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2012-09-02\"",
-                  "offset": 32
-                },
-                {
-                  "val": "\"2012-09-06\"",
-                  "offset": 48
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_enters_date_range_from_to(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 55995600,
+              "duration": 78111600,
               "status": "passed"
             },
             "line": 11,
-            "name": "clicks search",
+            "name": "message The new payee The Law Offices of Hyde, Price \u0026 Scharks was successfully created. should be displayed",
             "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2130359100,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "results table should only show transactions dates between \"2012-09-02\" to \"2012-09-06\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2012-09-02\"",
-                  "offset": 58
-                },
-                {
-                  "val": "\"2012-09-06\"",
-                  "offset": 74
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_transactions_dates_between_to(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2055202900,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the results table should only not contain transactions dated \"2012-09-01\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"2012-09-01\"",
-                  "offset": 61
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_results_table_should_only_not_contain_transactions_dated(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@find"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-25T22:01:07.933Z",
-        "before": [
-          {
-            "result": {
-              "duration": 5796739900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "Search description",
-        "description": "",
-        "id": "find-transactions-in-account-activity;search-description",
-        "after": [
-          {
-            "result": {
-              "duration": 1427294800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7762065200,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "the user accesses the Find Transactions tab",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_accesses_the_Find_Transactions_tab()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 292054000,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "the user enters description \"ONLINE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ONLINE\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_enters_description(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 225056800,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 364663500,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "results table should only show descriptions containing \"ONLINE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ONLINE\"",
-                  "offset": 55
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 211358500,
-              "status": "passed"
-            },
-            "line": 20,
-            "name": "the user enters description \"OFFICE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OFFICE\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_enters_description(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 147963400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 63984500,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "results table should only show descriptions containing \"OFFICE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OFFICE\"",
-                  "offset": 55
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "results table should not show descriptions containing \"OFFICE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"OFFICE\"",
-                  "offset": 54
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_not_show_descriptions_containing(java.lang.String)"
-            },
-            "keyword": "But "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@find"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-25T22:01:24.247Z",
-        "before": [
-          {
-            "result": {
-              "duration": 5521424500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 25,
-        "name": "Search description case insensitive",
-        "description": "",
-        "id": "find-transactions-in-account-activity;search-description-case-insensitive",
-        "after": [
-          {
-            "result": {
-              "duration": 1292884500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7445055900,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "the user accesses the Find Transactions tab",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_accesses_the_Find_Transactions_tab()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 131420800,
-              "status": "passed"
-            },
-            "line": 27,
-            "name": "the user enters description \"ONLINE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ONLINE\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_enters_description(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 99946000,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 269374000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "results table should only show descriptions containing \"ONLINE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ONLINE\"",
-                  "offset": 55
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 79999600,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "the user enters description \"online\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"online\"",
-                  "offset": 28
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_enters_description(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 51310300,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 47996900,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "results table should only show descriptions containing \"ONLINE\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ONLINE\"",
-                  "offset": 55
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_only_show_descriptions_containing(java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AddNewPayeeDefs.message_The_new_payee_The_Law_Offices_of_Hyde_Price_Scharks_was_successfully_created_should_be_displayed()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@find"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-25T22:01:39.210Z",
-        "before": [
-          {
-            "result": {
-              "duration": 5833781800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 34,
-        "name": "Type",
-        "description": "",
-        "id": "find-transactions-in-account-activity;type",
-        "after": [
-          {
-            "result": {
-              "duration": 1256066800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 8834153400,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "the user accesses the Find Transactions tab",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.the_user_accesses_the_Find_Transactions_tab()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 82585500,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "clicks search",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.clicks_search()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2077888700,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "results table should show at least one result under Deposit",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under_Deposit()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3098183800,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "results table should show at least one result under Withdrawal",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under_Withdrawal()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 306946200,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "user selects type \"Deposit\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Deposit\"",
-                  "offset": 18
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.user_selects_type(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2109263400,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "results table should show at least one result under Deposit",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under_Deposit()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3069823900,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "results table should show no result under Withdrawal",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_show_no_result_under_Withdrawal()"
-            },
-            "keyword": "But "
-          },
-          {
-            "result": {
-              "duration": 183808400,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "user selects type \"Withdrawal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Withdrawal\"",
-                  "offset": 18
-                }
-              ],
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.user_selects_type(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3116147600,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "results table should show at least one result under Withdrawal",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_show_at_least_one_result_under_Withdrawal()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2116869800,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "results table should show no result under Deposit",
-            "match": {
-              "location": "com.zerobank.stepdefinitions.FindTransactionsDefs.results_table_should_show_no_result_under_Deposit()"
-            },
-            "keyword": "But "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@find"
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "Find Transactions in Account Activity",
+    "name": "Add new payee under pay bills",
     "description": "",
-    "id": "find-transactions-in-account-activity",
+    "id": "add-new-payee-under-pay-bills",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/FindTransactions.feature",
-    "tags": [
-      {
-        "name": "@find",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/AddNewPayee.feature",
+    "tags": []
   }
 ]
