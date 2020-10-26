@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class PayBillsPage extends BasePage{
     public PayBillsPage(){
         PageFactory.initElements(Driver.get(), this);
@@ -12,6 +14,9 @@ public class PayBillsPage extends BasePage{
 
     @FindBy(xpath = "//*[@id=\"tabs\"]/ul/li[2]/a")
     public WebElement addNew;
+
+    @FindBy(xpath = "//*[@id=\"tabs\"]/ul/li[3]/a")
+    public WebElement purchaseForeign;
 
     @FindBy(id = "np_new_payee_name")
     public WebElement payeeName;
@@ -30,5 +35,14 @@ public class PayBillsPage extends BasePage{
 
     @FindBy(id = "alert_content")
     public WebElement alertMessage;
+
+    @FindBy(id = "pc_currency")
+    public WebElement select;
+
+    @FindBy(id = "pc_calculate_costs")
+    public WebElement calculate;
+
+    @FindBy(id = "pc_amount")
+    public WebElement amount;
 
 }

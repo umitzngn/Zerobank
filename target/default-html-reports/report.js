@@ -1,16 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AddNewPayee.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AccountActivityNavigation.feature");
 formatter.feature({
-  "name": "Add new payee under pay bills",
+  "name": "Navigating to specific accounts in Accounts Activity",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@activity"
+    }
+  ]
 });
 formatter.scenario({
-  "name": "Add a new payee",
+  "name": "Savings account redirect",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@wip"
+      "name": "@activity"
     }
   ]
 });
@@ -18,37 +23,265 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "Add New Payee tab",
+  "name": "the user is logged in",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AddNewPayeeDefs.add_New_Payee_tab()"
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_user_is_logged_in()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "creates new payee using following information",
-  "rows": [
-    {},
-    {},
-    {},
-    {}
-  ],
-  "keyword": "And "
+  "name": "the user clicks on Savings link on the Account Summary page",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AddNewPayeeDefs.creates_new_payee_using_following_information(java.util.Map\u003cjava.lang.String, java.lang.String\u003e)"
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_user_clicks_on_Savings_link_on_the_Account_Summary_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "message The new payee The Law Offices of Hyde, Price \u0026 Scharks was successfully created. should be displayed",
+  "name": "the Account Activity page should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AddNewPayeeDefs.message_The_new_payee_The_Law_Offices_of_Hyde_Price_Scharks_was_successfully_created_should_be_displayed()"
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_Account_Activity_page_should_be_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Account drop down should have Savings selected",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.account_drop_down_should_have_Savings_selected()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Brokerage account redirect",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@activity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_user_is_logged_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks on Brokerage link on the Account Summary page",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_user_clicks_on_Brokerage_link_on_the_Account_Summary_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the Account Activity page should be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_Account_Activity_page_should_be_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Account drop down should have Brokerage selected",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.account_drop_down_should_have_Brokerage_selected()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Checking account redirect",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@activity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_user_is_logged_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks on Checking link on the Account Summary page",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_user_clicks_on_Checking_link_on_the_Account_Summary_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the Account Activity page should be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_Account_Activity_page_should_be_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Account drop down should have Checking selected",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.account_drop_down_should_have_Checking_selected()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Credit Card account redirect",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@activity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_user_is_logged_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks on Credit card link on the Account Summary page",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_user_clicks_on_Credit_card_link_on_the_Account_Summary_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the Account Activity page should be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_Account_Activity_page_should_be_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Account drop down should have Credit Card selected",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.account_drop_down_should_have_Credit_Card_selected()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Loan account redirect",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@activity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_user_is_logged_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks on Loan link on the Account Summary page",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_user_clicks_on_Loan_link_on_the_Account_Summary_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the Account Activity page should be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.the_Account_Activity_page_should_be_displayed()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Account drop down should have Loan selected",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigationDefs.account_drop_down_should_have_Loan_selected()"
 });
 formatter.result({
   "status": "passed"
