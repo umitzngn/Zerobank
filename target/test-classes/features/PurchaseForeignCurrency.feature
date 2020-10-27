@@ -1,3 +1,4 @@
+@foreign
 Feature: Purchase Foreign Currency
 
   Scenario: Available currencies

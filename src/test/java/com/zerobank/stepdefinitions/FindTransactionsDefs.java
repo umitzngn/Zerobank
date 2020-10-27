@@ -102,6 +102,7 @@ public class FindTransactionsDefs {
         Collections.sort(actualDates,Collections.reverseOrder());
 
         Assert.assertEquals(expectedDates,actualDates);
+
     }
 
     @Then("the results table should only not contain transactions dated {string}")
