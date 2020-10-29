@@ -69,6 +69,7 @@ public class FindTransactionsDefs {
     public void results_table_should_only_show_transactions_dates_between_to(String dateFirst, String dateLast) throws ParseException {
 
         BrowserUtils.waitFor(2);
+
         AccountActivityPage accountActivityPage = new AccountActivityPage();
         List<WebElement> datesInTable = accountActivityPage.table;
         List<String> dates = BrowserUtils.getElementsText(datesInTable);
@@ -81,12 +82,15 @@ public class FindTransactionsDefs {
 
         Date d1 = format.parse(dateFirst);
         Date d2 = format.parse(dateLast);
-
+        boolean flag = false;
         for (Date date : listOfDates) {
+            flag = false;
             if(date.after(d1) && date.before(d2) || date.equals(d1) || date.equals(d2)){
-                Assert.assertTrue(true);
+                flag = true;
             }
+
         }
+        Assert.assertTrue(flag);
 
     }
 

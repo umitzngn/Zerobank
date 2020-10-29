@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class AccountSummaryPage extends BasePage {
     public AccountSummaryPage(){
         PageFactory.initElements(Driver.get(), this);
@@ -27,6 +29,13 @@ public class AccountSummaryPage extends BasePage {
 
     @FindBy(xpath = "//li[@id='pay_bills_tab']/a")
     public WebElement payBills;
+
+    @FindBy(xpath = "//h2[@class='board-header']")
+    public List<WebElement> accountTypes;
+
+    @FindBy(xpath = "//div[3]/div/table/thead/tr/th")
+    public List<WebElement> columns;
+
 
 
 
