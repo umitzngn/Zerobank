@@ -5,7 +5,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Account drop down options should be displayed",
+  "name": "Transactions table should have column",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -48,9 +48,8 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Account drop down should have the options",
+  "name": "Transactions table should have columns",
   "rows": [
-    {},
     {},
     {},
     {},
@@ -59,7 +58,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AccountActivityDefs.account_drop_down_should_have_the_options(java.util.List\u003cjava.lang.String\u003e)"
+  "location": "com.zerobank.stepdefinitions.AccountActivityDefs.transactions_table_should_have_columns(java.util.List\u003cjava.lang.String\u003e)"
 });
 formatter.result({
   "status": "passed"

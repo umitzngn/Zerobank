@@ -11,7 +11,7 @@ Feature: Account Activity
     When The user enters the valid credential
     Then The user clicks the Account Activity button
     Then Account drop down should have Savings selected
-  @wip
+
   Scenario: Account drop down options should be displayed
     Given The user is on the login page
     When The user enters the valid credential
@@ -22,7 +22,7 @@ Feature: Account Activity
       | Loan        |
       | Credit Card |
       | Brokerage   |
-
+  @wip
   Scenario: Transactions table should have column
     Given The user is on the login page
     When The user enters the valid credential

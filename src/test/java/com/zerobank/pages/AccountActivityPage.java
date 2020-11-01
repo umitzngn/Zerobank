@@ -45,6 +45,9 @@ public class AccountActivityPage extends BasePage {
     @FindBy(id = "aa_type")
     public WebElement select;
 
+    @FindBy(xpath = "//div[@id='all_transactions_for_account']/table/thead/tr/th")
+    public List<WebElement> columns;
+
 
 
 
