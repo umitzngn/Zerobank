@@ -5,6 +5,7 @@ import com.zerobank.pages.AccountSummaryPage;
 import com.zerobank.utilities.BrowserUtils;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
@@ -20,10 +21,18 @@ public class AccountActivityDefs {
     public void account_drop_down_should_have_the_options(List<String> expectedAccountOptions) {
         AccountActivityPage accountActivityPage = new AccountActivityPage();
         Select accountOptions = new Select(accountActivityPage.dropdown);
-        System.out.println("accountOptions.getOptions().toString() = " + accountOptions.getOptions().toString());
 
-        //List<String> actualAccountOptions = BrowserUtils.getElementsText(accountOptions.getOptions());
-        //Assert.assertEquals(expectedAccountOptions,actualAccountOptions);
+        List<String> actualAccountOptions = BrowserUtils.getElementsText(accountOptions.getOptions());
+
+        boolean flag = false;
+        for (int i = 0; i < actualAccountOptions.size(); i++) {
+            for (int j = 0; j < expectedAccountOptions.size(); j++) {
+                if (actualAccountOptions.get(i).equals(expectedAccountOptions.get(j))){
+                    flag = true;
+                }
+            }
+        }
+        Assert.assertTrue(flag);
 
     }
 
