@@ -45,4 +45,16 @@ public class PayBillsPage extends BasePage{
     @FindBy(id = "pc_amount")
     public WebElement amount;
 
+    @FindBy(id = "sp_amount")
+    public WebElement amountBox;
+
+    @FindBy(id = "sp_date")
+    public WebElement dateBox;
+
+    @FindBy(id = "pay_saved_payees")
+    public WebElement payButton;
+
+    @FindBy(id = "alert_content")
+    public WebElement successfulSubmittedMessage;
+
 }

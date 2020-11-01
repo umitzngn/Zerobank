@@ -1,14 +1,22 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AccountActivity.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/PayBills.feature");
 formatter.feature({
-  "name": "Account Activity",
+  "name": "Pay Bills",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@pay"
+    }
+  ]
 });
 formatter.scenario({
-  "name": "Transactions table should have column",
+  "name": "Date field should not accept alphabetical characters",
   "description": "",
   "keyword": "Scenario",
   "tags": [
+    {
+      "name": "@pay"
+    },
     {
       "name": "@wip"
     }
@@ -38,27 +46,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user clicks the Account Activity button",
+  "name": "The user clicks the Pay Bills button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AccountActivityDefs.the_user_clicks_the_Account_Activity_button()"
+  "location": "com.zerobank.stepdefinitions.PayBillsDefs.the_user_clicks_the_Pay_Bills_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Transactions table should have columns",
-  "rows": [
-    {},
-    {},
-    {},
-    {}
-  ],
+  "name": "The user should not able to enter alphabetical characters in date box",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AccountActivityDefs.transactions_table_should_have_columns(java.util.List\u003cjava.lang.String\u003e)"
+  "location": "com.zerobank.stepdefinitions.PayBillsDefs.the_user_should_not_able_to_enter_alphabetical_characters_in_date_box()"
 });
 formatter.result({
   "status": "passed"

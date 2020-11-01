@@ -22,7 +22,7 @@ Feature: Account Activity
       | Loan        |
       | Credit Card |
       | Brokerage   |
-  @wip
+
   Scenario: Transactions table should have column
     Given The user is on the login page
     When The user enters the valid credential
