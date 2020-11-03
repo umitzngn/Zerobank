@@ -1,5 +1,5 @@
 Feature: Account Activity
-
+  @smoke
   Scenario: Login Account Activity page
     Given The user is on the login page
     When The user enters the valid credential
@@ -11,7 +11,7 @@ Feature: Account Activity
     When The user enters the valid credential
     Then The user clicks the Account Activity button
     Then Account drop down should have Savings selected
-
+  @smoke
   Scenario: Account drop down options should be displayed
     Given The user is on the login page
     When The user enters the valid credential

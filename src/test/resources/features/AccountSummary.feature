@@ -5,7 +5,7 @@ Feature: Account Summary
     Given The user is on the login page
     When The user enters the valid credential
     Then The user should be able to see the title "Zero - Account Summary"
-
+  @smoke
   Scenario: Account types should be displayed
     Given The user is on the login page
     When The user enters the valid credential

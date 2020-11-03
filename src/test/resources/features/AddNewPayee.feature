@@ -1,6 +1,6 @@
 @add
 Feature: Add new payee under pay bills
-
+  @smoke
   Scenario: Add a new payee
     Given Add New Payee tab
     And creates new payee using following information

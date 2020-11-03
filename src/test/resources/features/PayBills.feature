@@ -23,6 +23,7 @@ Feature: Pay Bills
     Then The user enters the "200" in Amount box
     Then The user clicks pay button
     And The user should be able to see failure message "Please fill out this field."
+  @smoke
   Scenario: The user tries to make a payment without entering the date
     Given The user is on the login page
     When The user enters the valid credential
