@@ -1,4 +1,4 @@
-@find
+@find @regression
 Feature: Find Transactions in Account Activity
 
   Scenario: Search date range

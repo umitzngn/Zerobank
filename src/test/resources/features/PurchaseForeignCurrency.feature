@@ -1,4 +1,4 @@
-@foreign
+@foreign @regression
 Feature: Purchase Foreign Currency
 
   Scenario: Available currencies

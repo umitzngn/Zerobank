@@ -1,4 +1,4 @@
-@activity
+@activity @regression
 Feature: Navigating to specific accounts in Accounts Activity
 
   Scenario: Savings account redirect

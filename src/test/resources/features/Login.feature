@@ -1,4 +1,4 @@
-@login @smoke
+@login @smoke @regression
 Feature: Only authorized users should be able to login to the application
 
   Scenario: login with the valid credential
