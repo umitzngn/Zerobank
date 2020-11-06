@@ -89,7 +89,7 @@
 
     <profiles>
         <profile>
-            <id>RegressionRunner</id>
+            <id>Regression</id>
             <build>
                 <plugins>
                     <plugin>
@@ -100,7 +100,7 @@
 
                             <parallel>methods</parallel>
                             <perCoreThreadCount>false</perCoreThreadCount>
-                            <threadCountMethods>5</threadCountMethods>
+                            <threadCountMethods>4</threadCountMethods>
 
                             <includes>
                                 <include>**/*RegressionRunner.java</include>
