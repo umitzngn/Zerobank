@@ -100,7 +100,7 @@
 
                             <parallel>methods</parallel>
                             <perCoreThreadCount>false</perCoreThreadCount>
-                            <threadCountMethods>4</threadCountMethods>
+                            <threadCountMethods>5</threadCountMethods>
 
                             <includes>
                                 <include>**/*RegressionRunner.java</include>
