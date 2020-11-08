@@ -23,3 +23,13 @@ Feature: Only authorized users should be able to login to the application
   Scenario: login with without password
     When the user does not enter any password
     Then The user should see the error message "Login and/or password are wrong."
+
+
+
+
+  Scenario Outline:
+    Given The user is on the login page
+    When The user enters the valid credential
+    Then The user should be able to login
+
+    Examples:
