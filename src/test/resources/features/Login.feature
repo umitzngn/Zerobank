@@ -27,9 +27,13 @@ Feature: Only authorized users should be able to login to the application
 
 
 
-  Scenario Outline:
+  Scenario Outline: invalid
     Given The user is on the login page
-    When The user enters the valid credential
-    Then The user should be able to login
+    When The user enters the invalid <"value"> credential
+    Then The user should see the error message "Login and/or password are wrong."
 
     Examples:
+      | invalid_admin_username |
+      | invalid_admin_password |
+      | empty_admin_username   |
+      | empty_admin_password   |
