@@ -26,6 +26,11 @@ Feature: Only authorized users should be able to login to the application
 
 
 
+  Scenario: login with the valid credential
+    Given The user is on the login page
+    When The user enters the valid credential
+    Then The user should be able to login
+
 
   Scenario Outline: invalid
     Given The user is on the login page
