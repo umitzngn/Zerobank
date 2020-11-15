@@ -38,6 +38,7 @@ Feature: Only authorized users should be able to login to the application
     Then The user should see the error message "Login and/or password are wrong."
 
     Examples:
+      | value                  |
       | invalid_admin_username |
       | invalid_admin_password |
       | empty_admin_username   |
