@@ -27,7 +27,7 @@ Feature: Pay Bills
 
   Scenario: Amount field should not accept alphabetical characters
     Then The user should not able to enter alphabetical or special characters in amount box
-  @wip
+
   Scenario: Date field should not accept alphabetical characters
     Then The user should not able to enter alphabetical characters in date box
 
