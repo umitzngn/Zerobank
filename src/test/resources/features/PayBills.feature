@@ -14,12 +14,12 @@ Feature: Pay Bills
     Then The user enters the "2020-09-20" in date box
     Then The user clicks pay button
     And The user should able to see the successfully submitted message "The payment was successfully submitted."
-  @smoke
+
   Scenario: The user tries to make a payment without entering the amount
     Then The user enters the "200" in Amount box
     Then The user clicks pay button
     And The user should be able to see failure message "Please fill out this field."
-
+  @smoke
   Scenario: The user tries to make a payment without entering the date
     Then The user enters the "2020-09-20" in date box
     Then The user clicks pay button

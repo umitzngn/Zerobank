@@ -3,7 +3,7 @@ Feature: Purchase Foreign Currency
 
   Background:
     Given the user accesses the Purchase foreign currency cash tab
-
+  @smoke
   Scenario: Available currencies
     Then following currencies should be available
       | Australia (dollar)    |
