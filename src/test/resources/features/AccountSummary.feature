@@ -15,7 +15,7 @@ Feature: Account Summary
       | Investment Accounts |
       | Credit Accounts     |
       | Loan Accounts       |
-
+  @smoke
   Scenario: Credit Accounts table must have columns
     Then Credit Accounts table must have columns
       | Account     |

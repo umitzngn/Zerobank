@@ -3,7 +3,7 @@ Feature: Find Transactions in Account Activity
 
   Background:
     Given the user accesses the Find Transactions tab
-
+  @smoke
   Scenario: Search date range
     When the user enters date range from "2012-09-01" to "2012-09-06"
     And clicks search
@@ -30,7 +30,7 @@ Feature: Find Transactions in Account Activity
     When the user enters description "online"
     And clicks search
     Then results table should only show descriptions containing "ONLINE"
-
+  @smoke
   Scenario: Type
     And clicks search
     Then results table should show at least one result under Deposit
