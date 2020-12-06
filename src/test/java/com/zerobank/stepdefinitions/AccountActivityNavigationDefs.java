@@ -38,6 +38,7 @@ public class AccountActivityNavigationDefs {
         String expectedTitle = "Zero - Account Activity";
 
         Assert.assertEquals(expectedTitle,actualTitle);
+
     }
 
     @Then("Account drop down should have Savings selected")
@@ -51,6 +52,7 @@ public class AccountActivityNavigationDefs {
         String expectedSelectedOption = "Savings";
 
         Assert.assertEquals(expectedSelectedOption,actualSelectedOption);
+
     }
 
     @When("the user clicks on Brokerage link on the Account Summary page")
